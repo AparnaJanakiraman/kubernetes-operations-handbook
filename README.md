@@ -1,6 +1,14 @@
 # kubernetes-operations-handbook
 A production-focused Kubernetes handbook covering architecture, operations, troubleshooting, failure scenarios, and real-world deployment practices.
-#About This Repository
+
+
+## Repository Status
+
+🚧 This repository is actively being developed.
+
+The goal is to build a complete Kubernetes Operations Handbook covering Kubernetes architecture, workloads, networking, storage, security, troubleshooting, Amazon EKS, and production best practices through hands-on learning.
+
+## About This Repository
 
 Welcome to the Kubernetes Operations Handbook.
 
@@ -10,7 +18,7 @@ Every topic included in this repository is explored through hands-on practice, t
 
 This repository will continuously evolve as I progress from Kubernetes fundamentals to advanced production concepts.
 
-Why I Built This Repository
+## Why I Built This Repository
 
 While learning Kubernetes, I found that many repositories mainly contain copied notes, isolated YAML examples, or brief explanations from official documentation.
 
@@ -27,39 +35,36 @@ Recording lessons learned throughout the learning journey.
 
 This repository is intended to become an engineering handbook rather than a collection of notes.
 
-Engineering Principles
+## Engineering Principles
 
 The following principles guide this repository:
 
-Every YAML manifest is tested before being committed.
-Every concept is validated through hands-on practice.
-Every topic includes practical deployment examples.
-Every issue encountered during practice is documented with its root cause and solution.
-Understanding Kubernetes internals is more valuable than memorizing commands.
-Production thinking is prioritized throughout the repository.
-Continuous learning and improvement are part of every topic.
+-Every YAML manifest is tested before being committed.
+-Every concept is validated through hands-on practice.
+-Every topic includes practical deployment examples.
+-Every issue encountered during practice is documented with its root cause and solution.
+-Understanding Kubernetes internals is more valuable than memorizing commands.
+-Production thinking is prioritized throughout the repository.
+-Continuous learning and improvement are part of every topic.
 
+## What Makes This Repository Different?
 
-Learning Methodology
+Unlike traditional Kubernetes learning repositories, this project focuses on operational understanding rather than theoretical notes.
 
-Every Kubernetes topic in this repository follows a consistent documentation approach:
+Each topic includes:
 
-Introduction
-Why Kubernetes Needs This Resource
-Internal Working
-Architecture Overview
-YAML Breakdown
-Hands-on Lab
-Verification
-Failure Simulation
-Troubleshooting
-Production Use Cases
-Best Practices
-Operator's Notes
-Interview Questions
-Lessons Learned
+- Why Kubernetes needs this resource
+- Internal working
+- Architecture diagrams
+- YAML breakdown
+- Hands-on labs
+- Failure simulations
+- Troubleshooting
+- Production best practices
+- Operator's Notes
+- Interview Questions
 
-Repository Structure
+## Repository Structure
 kubernetes-operations-handbook/
 
 ├── 01-cluster-architecture/
@@ -96,21 +101,20 @@ kubernetes-operations-handbook/
 └── README.md
 
 
-Lab Environment
-
+## Lab Environment
 The practical exercises in this repository are performed using the following environment:
 
-Ubuntu Linux
-Docker
-Kubernetes
-kubectl
-AWS EC2
-Amazon EKS
-Git
-GitHub
-Visual Studio Code
+- Ubuntu Linux
+- Docker
+- Kubernetes
+- kubectl
+- AWS EC2
+- Amazon EKS
+- Git
+- GitHub
+- Visual Studio Code
 
-Future Enhancements
+## Future Enhancements
 
 The repository will continue to expand with advanced Kubernetes topics, including:
 
@@ -127,11 +131,49 @@ High Availability
 Disaster Recovery
 Security Hardening
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for additional information.
 
-About This Journey
+## Behind the Scenes
+
+One unique aspect of this repository is the focus on understanding what happens inside Kubernetes after every command.
+
+Instead of only learning how to create Kubernetes resources, this repository explains how different Kubernetes components interact internally.
+
+For example:
+
+kubectl apply
+
+↓
+
+API Server
+
+↓
+
+etcd
+
+↓
+
+Controller Manager
+
+↓
+
+Scheduler
+
+↓
+
+kubelet
+
+↓
+
+Container Runtime
+
+↓
+
+Running Application
+
+## About this Journey
 
 This repository represents my continuous journey toward becoming a proficient DevOps Engineer with strong Kubernetes operational knowledge.
 
